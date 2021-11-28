@@ -1,0 +1,31 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	min-width: 280px;
+	font-size: 22px;
+	line-height: 26px;
+	@extend %ft-500;
+}
+.wrapper {
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

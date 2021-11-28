@@ -1,0 +1,126 @@
+.header {
+    max-height: 128px;
+    &__inner {
+        display: flex;
+        align-content: stretch;
+    }
+    .logo {
+        flex: 0 0 auto;
+        background-color: $red;
+    }
+    .logo__link {
+        display: block;
+        height: 128px;
+        line-height: 128px;
+        width: 320px;
+        text-align: center;
+    }
+    .logo__img {
+        vertical-align: middle;
+    }
+    &__content {
+        flex: 1 1 auto;
+    }
+    &__top {
+        display: flex;
+        background-color: #111111;
+        color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 48px;
+        @extend %sf-700;
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+    &__contacts-box {
+        padding: 16px 50px 16px 20px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #2A2A2A;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-item {
+        padding: 17px 20px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #2A2A2A;
+        }
+    }
+    &__bottom {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+    &__bottom-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @extend %ft-400;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    &__bottom-item {
+        margin: 0 54px;
+    }
+    &__bottom-link {
+        padding: 15px;
+        display: inline-block;
+        transition: all .3s;
+        &:hover {
+            color: $red;
+        }
+    }
+    &__bottom-search {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #EEEEEE;
+        }
+    }
+    &__bottom-search-link {
+        padding: 19px;
+        display: inline-block;
+        transition: all .3s;
+        &:hover {
+            .header__bottom-search-img {
+                path {
+                    fill: $red;
+                }
+            }
+        }
+    }
+    &__bottom-search-img {
+        transition: all .3s;
+    }
+}
