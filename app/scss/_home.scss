@@ -336,13 +336,596 @@
       button {
         font-size: 0;
         width: 30px;
-        background-color: #4D4D4D;
+        background-color: #4d4d4d;
         margin: 0 5px;
         height: 3px;
         border: none;
         outline: none;
-        transition: all .3s;
+        transition: all 0.3s;
+        cursor: pointer;
       }
     }
   }
+}
+
+// Banner
+.banner-section {
+  min-height: 264px;
+  margin-top: -100px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 428px 1fr;
+  }
+  &__content {
+    background-color: $red;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $red;
+      width: 1000%;
+      right: -1000%;
+      bottom: 0;
+      top: 0;
+    }
+  }
+  &__content-inner {
+    padding-left: 70px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 59px;
+    line-height: 79px;
+    @extend %ft-700;
+    margin-bottom: 17px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 186px;
+      height: 5px;
+      background-color: #fff;
+    }
+  }
+  &__btn {
+    color: inherit;
+    background-color: transparent;
+    border: #fff solid 1px;
+    padding: 10px 26px;
+    text-transform: uppercase;
+    @extend %sf-300;
+    font-size: 14px;
+    margin-top: 17px;
+  }
+}
+
+// reviews-section
+.reviews-section {
+  padding: 265px 0 84px;
+  &__item {
+    display: flex !important;
+  }
+  &__content {
+    width: 521px;
+    margin-top: 60px;
+  }
+  &__subtitle {
+    @extend %sf-700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #5e5e5e;
+  }
+  &__title {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 67px;
+    position: relative;
+    margin-bottom: 48px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 186px;
+      height: 5px;
+      background-color: $red;
+    }
+  }
+  .comment {
+    &__profession {
+      color: #7e7e7e;
+      margin-bottom: 14px;
+      @extend %sf-400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__name {
+      text-transform: uppercase;
+      @extend %sf-700;
+    }
+    .rate {
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 28px;
+      color: #7e7e7e;
+    }
+  }
+  &__images {
+    width: 615px;
+    height: 631px;
+    position: relative;
+    margin-left: 88px;
+  }
+  &__imgbox {
+    position: absolute;
+    width: 273px;
+    height: 304px;
+    &.reviews-1 {
+      top: 0px;
+      left: 30%;
+      z-index: 5;
+    }
+    &.reviews-2 {
+      right: 0px;
+      top: 31%;
+      z-index: 3;
+    }
+    &.reviews-3 {
+      bottom: -10px;
+      left: 20%;
+    }
+    &.reviews-4 {
+      left: 0;
+      top: 26%;
+      z-index: 4;
+    }
+  }
+  &__slider-btn {
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
+  }
+  &__slider-btnnext {
+    left: 40px;
+  }
+}
+
+// progress
+.progress {
+  background-color: #111111;
+  padding: 57px 0 257px;
+  &__inner {
+    display: flex;
+    color: #fff;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-left: 117px;
+    }
+  }
+  &__img {
+    margin-right: 5px;
+  }
+  &__number {
+    @extend %ft-700;
+    font-size: 44px;
+  }
+  &__title {
+    @extend %sf-400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+// training
+.training-section {
+  text-align: center;
+  padding-bottom: 160px;
+  padding-top: 100px;
+  &__title {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 79px;
+    text-align: center;
+  }
+  &__text {
+    width: 821px;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 auto;
+  }
+  &__item {
+    position: relative;
+  }
+  &__popup {
+    width: 512px;
+    height: 433px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info {
+    width: 400px;
+    height: 95px;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-subtitle {
+      color: $red;
+      text-transform: uppercase;
+      @extend %sf-700;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &-title {
+      @extend %ft-700;
+      margin-top: 5px;
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    li {
+      &.slick-active button {
+        background-color: $red;
+      }
+      button {
+        font-size: 0;
+        width: 30px;
+        background-color: #4d4d4d;
+        margin: 0 5px;
+        height: 3px;
+        border: none;
+        outline: none;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// protein-section
+.protein-section {
+  height: 570px;
+  background-image: url("../images/protein-bg.jpg");
+  background-repeat: no-repeat;
+  &__inner {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  &__title {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 79px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 17px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 186px;
+      height: 5px;
+      background-color: #fff;
+    }
+  }
+  &__text {
+    color: rgb(231, 230, 230);
+  }
+  &__btn {
+    margin-top: 48px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: inherit;
+    padding: 12px 30px;
+    @extend %sf-300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+// product-section
+.product-section {
+  padding-bottom: 160px;
+  padding-top: 300px;
+  background-image: url("../images/protein-bg-text.png");
+  background-repeat: no-repeat;
+  background-position: 0% 75%;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__images {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/circuit-product.svg");
+      background-repeat: no-repeat;
+      background-position: 25% 0%;
+      left: -17%;
+      height: 550px;
+      width: 399px;
+    }
+    display: flex;
+    align-items: center;
+    img {
+      max-width: none;
+    }
+  }
+  &__info {
+    margin-left: 150px;
+  }
+  &__subtitle {
+    @extend %sf-700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #5e5e5e;
+  }
+  &__title {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 67px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 186px;
+      height: 5px;
+      background-color: $red;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    color: #7e7e7e;
+    margin-top: 25px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  &__content-box + &__content-box {
+    margin-left: 22px;
+  }
+  &__content-label {
+    display: inline-block;
+    @extend %sf-400;
+    font-size: 18px;
+    line-height: 21px;
+
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  &__content-text {
+    background-color: #ececec;
+    padding: 9px 25px;
+    border-radius: 5%;
+    top: 4px;
+    left: 5px;
+    z-index: 5;
+    color: #aeaeae;
+    transition: all 0.2s;
+  }
+  .jq-checkbox,
+  .jq-radio {
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    opacity: 0;
+    &.checked + .product-section__content-text {
+      background-color: transparent;
+      color: #000;
+      border: #000 solid 1px;
+    }
+  }
+  &__price {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 67px;
+    margin-top: 25px;
+    margin-bottom: 21px;
+  }
+  &__btn {
+    padding: 17px 55px;
+    color: #000;
+    background-color: #ececec;
+    @extend %sf-300;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    text-transform: uppercase;
+  }
+  &__btn-cart {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+// blog-section
+.blog-section {
+  padding-bottom: 200px;
+  &__title {
+    @extend %ft-700;
+    font-size: 59px;
+    line-height: 79px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 821px;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .post {
+    width: 33%;
+  }
+  .post + .post {
+    margin-left: 30px;
+  }
+  .post__imgbox {
+    position: relative;
+    &-date {
+      background-color: $red;
+      color: #fff;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px 21px;
+    }
+  }
+  .post__info {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 23px;
+  }
+  .post__info-item {
+    display: flex;
+    align-items: center;
+  }
+  .post__info-item + .post__info-item {
+    margin-left: 20px;
+  }
+  .post__info-text {
+    margin-left: 10px;
+    text-transform: uppercase;
+    @extend %sf-400;
+    font-size: 14px;
+  }
+  .post__title {
+    text-transform: uppercase;
+    @extend %sf-700;
+    margin-bottom: 17px;
+  }
+  .post__text {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .post__btn {
+    background-color: transparent;
+    border: #000 solid 1px;
+    text-transform: uppercase;
+    padding: 19px 52px;
+    margin-top: 30px;
+  }
+  &__more {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 37px;
+    color: $red;
+  }
+}
+
+// start-section
+.start-section {
+  margin-top: -8%;
+  position: relative;
+  margin-bottom: 110px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: $red;
+    border-radius: 5%;
+    color: #fff;
+    padding: 83px 86px 100px 56px;
+  }
+  &__info {
+    max-width: 620px;
+  }
+  &__title {
+    @extend %ft-700;
+    font-size: 60px;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    @extend %ft-400;
+    font-size: 36px;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
+  &__text {
+    @extend %ft-400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  &__form {
+    max-width: 389px;
+  }
+  &__input {
+    border: #EDEDED solid 2px;
+    width: 100%;
+    padding: 20px 23px 20px 23px;
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+  &__btn {
+    background-color: #000;
+    border: none;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 16px;
+  }
+}
+
+.gray-bg {
+  background-color: #EEEEEE;
+  height: 467px;
+  width: 100%;
+  position: absolute;
+  top: 86px;
+  z-index: -1;
 }

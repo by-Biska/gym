@@ -49,6 +49,8 @@ function scripts() {
   return src([
     "node_modules/jquery/dist/jquery.js",
     "node_modules/slick-carousel/slick/slick.js",
+    "app/libs/v2.3.2/v2.3.2/jquery.rateyo.min.js",
+    "app/libs/jQueryFormStyler-master/dist/jquery.formstyler.js",
     "app/js/main.js",
   ])
     .pipe(concat("main.min.js"))

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="179" height="179" viewBox="0 0 179 179">
+  <defs>
+    <filter id="Вычитание_1" x="0" y="0" width="179" height="179" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Вычитание_1)">
+    <path id="Вычитание_1-2" data-name="Вычитание 1" d="M52,104A52.014,52.014,0,0,1,31.759,4.086,52.014,52.014,0,0,1,72.241,99.914,51.675,51.675,0,0,1,52,104ZM42.006,32.932a4.068,4.068,0,0,0-2.786,1.127A3.949,3.949,0,0,0,38,36.938V67.063a3.948,3.948,0,0,0,1.22,2.878,4.069,4.069,0,0,0,2.787,1.127,3.942,3.942,0,0,0,2-.545L70.021,55.462a4,4,0,0,0,0-6.924L44,33.476A3.94,3.94,0,0,0,42.006,32.932Z" transform="translate(37.5 37.5)" fill="#fff"/>
+  </g>
+</svg>

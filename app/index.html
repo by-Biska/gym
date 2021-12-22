@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="../node_modules/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <title>Train Hard</title>
 </head>
 
@@ -32,16 +34,24 @@
             </div>
             <ul class="header__social">
               <li class="header__social-item">
-                <img class="header__social-img" src="images/facebook.svg" alt="social">
+                <a href="#">
+                  <img class="header__social-img" src="images/facebook.svg" alt="social">
+                </a>
               </li>
               <li class="header__social-item">
-                <img class="header__social-img" src="images/youtube.svg" alt="social">
+                <a href="#">
+                  <img class="header__social-img" src="images/youtube.svg" alt="social">
+                </a>
               </li>
               <li class="header__social-item">
-                <img class="header__social-img" src="images/google.svg" alt="social">
+                <a href="#">
+                  <img class="header__social-img" src="images/google.svg" alt="social">
+                </a>
               </li>
               <li class="header__social-item">
-                <img class="header__social-img" src="images/instagram.svg" alt="social">
+                <a href="#">
+                  <img class="header__social-img" src="images/instagram.svg" alt="social">
+                </a>
               </li>
             </ul>
           </div>
@@ -286,11 +296,14 @@
       <section class="banner-section">
         <div class="container">
           <div class="banner-section__inner">
-            <img class="banner-section__img" src=""></img>
+            <img class="banner-section__img" src="images/content/banner.jpg"></img>
             <div class="banner-section__content">
-              <h2 class="banner-section__title"></h2>
-              <p class="banner-section__text"></p>
-              <button class="banner-section__btn"></button>
+              <div class="banner-section__content-inner">
+                <h2 class="banner-section__title">title here</h2>
+                <p class="banner-section__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam .</p>
+                <button class="banner-section__btn">Read more</button>
+              </div>
             </div>
           </div>
         </div>
@@ -301,7 +314,7 @@
             <div class="reviews-section__item">
               <div class="reviews-section__content">
                 <h4 class="reviews-section__subtitle subtitle">Testimonial</h4>
-                <h2 class="reviews-section__title title">Reviews From
+                <h2 class="reviews-section__title title">Reviews From <br>
                   YOU</h2>
                 <div class="comment">
                   <h6 class="comment__profession">Nutritionist</h6>
@@ -315,17 +328,110 @@
                 </div>
               </div>
               <div class="reviews-section__images">
-                <div class="banner-section__imgbox" id="1">
-                  <img class="banner-section__img" src="" alt="">
+                <div class="reviews-section__imgbox reviews-1">
+                  <img class="reviews-section__img" src="images/content/reviews-1.jpg" alt="">
                 </div>
-                <div class="banner-section__imgbox" id="2">
-                  <img class="banner-section__img" src="" alt="">
+                <div class="reviews-section__imgbox reviews-2">
+                  <img class="reviews-section__img" src="images/content/reviews-2.jpg" alt="">
                 </div>
-                <div class="banner-section__imgbox" id="3">
-                  <img class="banner-section__img" src="" alt="">
+                <div class="reviews-section__imgbox reviews-3">
+                  <img class="reviews-section__img" src="images/content/reviews-3.jpg" alt="">
                 </div>
-                <div class="banner-section__imgbox" id="4">
-                  <img class="banner-section__img" src="" alt="">
+                <div class="reviews-section__imgbox reviews-4">
+                  <img class="reviews-section__img" src="images/content/reviews-4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section__item">
+              <div class="reviews-section__content">
+                <h4 class="reviews-section__subtitle subtitle">Testimonial</h4>
+                <h2 class="reviews-section__title title">Reviews From <br>
+                  YOU</h2>
+                <div class="comment">
+                  <h6 class="comment__profession">Nutritionist</h6>
+                  <h3 class="comment__name">Jeremy George</h3>
+                  <div class="rate">
+                    <div class="rate-yo" data-rateyo-rating="5" data-rateyo-read-only="true"></div>
+                  </div>
+                  <p class="comment__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                </div>
+              </div>
+              <div class="reviews-section__images">
+                <div class="reviews-section__imgbox reviews-1">
+                  <img class="reviews-section__img" src="images/content/reviews-1.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-2">
+                  <img class="reviews-section__img" src="images/content/reviews-2.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-3">
+                  <img class="reviews-section__img" src="images/content/reviews-3.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-4">
+                  <img class="reviews-section__img" src="images/content/reviews-4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section__item">
+              <div class="reviews-section__content">
+                <h4 class="reviews-section__subtitle subtitle">Testimonial</h4>
+                <h2 class="reviews-section__title title">Reviews From <br>
+                  YOU</h2>
+                <div class="comment">
+                  <h6 class="comment__profession">Nutritionist</h6>
+                  <h3 class="comment__name">Jeremy George</h3>
+                  <div class="rate">
+                    <div class="rate-yo" data-rateyo-rating="5" data-rateyo-read-only="true"></div>
+                  </div>
+                  <p class="comment__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                </div>
+              </div>
+              <div class="reviews-section__images">
+                <div class="reviews-section__imgbox reviews-1">
+                  <img class="reviews-section__img" src="images/content/reviews-1.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-2">
+                  <img class="reviews-section__img" src="images/content/reviews-2.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-3">
+                  <img class="reviews-section__img" src="images/content/reviews-3.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-4">
+                  <img class="reviews-section__img" src="images/content/reviews-4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section__item">
+              <div class="reviews-section__content">
+                <h4 class="reviews-section__subtitle subtitle">Testimonial</h4>
+                <h2 class="reviews-section__title title">Reviews From <br>
+                  YOU</h2>
+                <div class="comment">
+                  <h6 class="comment__profession">Nutritionist</h6>
+                  <h3 class="comment__name">Jeremy George</h3>
+                  <div class="rate">
+                    <div class="rate-yo" data-rateyo-rating="5" data-rateyo-read-only="true"></div>
+                  </div>
+                  <p class="comment__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                </div>
+              </div>
+              <div class="reviews-section__images">
+                <div class="reviews-section__imgbox reviews-1">
+                  <img class="reviews-section__img" src="images/content/reviews-1.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-2">
+                  <img class="reviews-section__img" src="images/content/reviews-2.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-3">
+                  <img class="reviews-section__img" src="images/content/reviews-3.jpg" alt="">
+                </div>
+                <div class="reviews-section__imgbox reviews-4">
+                  <img class="reviews-section__img" src="images/content/reviews-4.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -333,12 +439,33 @@
         </div>
       </section>
       <div class="progress">
-        <div class="conatainer">
+        <div class="container">
           <div class="progress__inner">
             <div class="progress__item">
-              <img class="progress__img" src=""></img>
+              <img class="progress__img" src="images/progress-1.svg"></img>
               <div class="progress__info">
-                <h2 class="progress__number"></h2>
+                <h2 class="progress__number">143</h2>
+                <h4 class="progress__title">Lorem ipsum</h4>
+              </div>
+            </div>
+            <div class="progress__item">
+              <img class="progress__img" src="images/progress-2.svg"></img>
+              <div class="progress__info">
+                <h2 class="progress__number">654</h2>
+                <h4 class="progress__title">Lorem ipsum</h4>
+              </div>
+            </div>
+            <div class="progress__item">
+              <img class="progress__img" src="images/progress-3.svg"></img>
+              <div class="progress__info">
+                <h2 class="progress__number">246</h2>
+                <h4 class="progress__title">Lorem ipsum</h4>
+              </div>
+            </div>
+            <div class="progress__item">
+              <img class="progress__img" src="images/progress-4.svg"></img>
+              <div class="progress__info">
+                <h2 class="progress__number">545</h2>
                 <h4 class="progress__title">Lorem ipsum</h4>
               </div>
             </div>
@@ -347,27 +474,103 @@
       </div>
       <div class="video">
         <div class="container-fluid">
-          <img src="" alt="" class="video__title">
+          <img src="images" alt="" class="video__title">
         </div>
         <div class="video__popup-wrapper">
           <div class="video__popup"></div>
         </div>
       </div>
       <section class="training-section">
-        <div class="conatiner">
+        <div class="container">
           <div class="training-section__inner">
-            <span>
-              <h2 class="training-section__title"></h2>
+            <span class="training-section__title-wrapper">
+              <h2 class="training-section__title">Our Training Series</h2>
             </span>
-            <p class="training-section__text"></p>
+            <p class="training-section__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
             <div class="training-section__slider">
-              <div class="training-section__item">
-                <div class="training-section__popup-wrapper">
-                  <div class="training-section__popup"></div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-1.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
                 </div>
-                <div class="training-section__info">
-                  <h5 class="training-section__subtitle">Exercise Name | S-2, E-4</h5>
-                  <h4 class="training-section__title">Lorem Ipsum Dolor Sit Amet</h4>
+              </div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-2.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-1.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-2.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-1.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="training-section__item-wrapper">
+                <div class="training-section__item">
+                  <div class="training-section__popup"
+                    style='background-image: url("../images/content/training-2.jpg");'>
+                    <a class="training-section__popup-play" data-fancybox="single" href="https://youtu.be/0OGYGCGTgC4">
+                      <img class="training-section__popup-imgbtn" src="images/play-btn.svg" alt="play button">
+                    </a>
+                  </div>
+                  <div class="training-section__info">
+                    <h5 class="training-section__info-subtitle">Exercise Name | S-2, E-4</h5>
+                    <h4 class="training-section__info-title">Lorem Ipsum Dolor Sit Amet</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -384,7 +587,7 @@
               <button class="protein-section__btn">SHOP NOW</button>
             </div>
             <div class="protein-section__images">
-              <img class="protein-section__img" src="" alt="">
+              <img class="protein-section__img" src="images/pngegg.png" alt="">
             </div>
           </div>
         </div>
@@ -393,22 +596,43 @@
         <div class="container">
           <div class="product-section__inner">
             <div class="product-section__images">
-              <img src="" alt="" class="product-section__img">
+              <img src="images/content/protein.png" alt="" class="product-section__img">
             </div>
             <div class="product-section__info">
               <h4 class="product-section__subtitle subtitle">Best selling Product</h4>
               <h2 class="product-section__title title">WHEY Protein</h2>
               <p class="product-section__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-              <div class="product-section__tags">
-                <button class="product-section__tag">2,27 kg</button>
-                <button class="product-section__tag">4.54 kg</button>
-                <button class="product-section__tag">7,05 kg</button>
+              <div class="product-section__content">
+                <div class="product-section__content-box">
+                  <label class="product-section__content-label">
+                    <input class="filter-style" name="radio" type="radio">
+                    <span class="product-section__content-text">
+                      2,27 kg
+                    </span>
+                  </label>
+                </div>
+                <div class="product-section__content-box">
+                  <label class="product-section__content-label">
+                    <input class="filter-style" name="radio" type="radio">
+                    <span class="product-section__content-text">
+                      4.54 kg
+                    </span>
+                  </label>
+                </div>
+                <div class="product-section__content-box">
+                  <label class="product-section__content-label">
+                    <input class="filter-style" name="radio" type="radio">
+                    <span class="product-section__content-text">
+                      7,05 kg
+                    </span>
+                  </label>
+                </div>
               </div>
               <h2 class="product-section__price">$10</h2>
               <div class="product-section__buttons">
-                <button class="product-section__btn-cart">Add to cart</button>
-                <button class="product-section__btn-wishlist">Add wishlist</button>
+                <button class="product-section__btn product-section__btn-cart">Add to cart</button>
+                <button class="product-section__btn product-section__btn-wishlist">Add wishlist</button>
               </div>
             </div>
           </div>
@@ -416,98 +640,96 @@
       </section>
       <section class="blog-section">
         <div class="container">
+          <span>
+            <h2 class="blog-section__title">OUR LATEST BLOG</h2>
+          </span>
+          <p class="blog-section__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
           <div class="blog-section__inner">
-            <span>
-              <h2 class="blog-section__title">OUR LATEST BLOG</h2>
-            </span>
-            <p class="blog-section__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-            <div class="blog-section__posts">
-              <div class="blog-section__post post">
-                <div class="post__imgbox">
-                  <img class="post__imgbox-img" src="" alt="">
-                  <div class="post__imgbox-date">
-                    <h4 class="post__imgbox-day">23</h4>
-                    <h4 class="post__imgbox-month">jan</h4>
-                  </div>
+            <div class="blog-section__post post">
+              <div class="post__imgbox">
+                <img class="post__imgbox-img" src="images/content/blog-1.jpg" alt="">
+                <div class="post__imgbox-date">
+                  <h4 class="post__imgbox-day">23</h4>
+                  <h4 class="post__imgbox-month">jan</h4>
                 </div>
-                <div class="post__info">
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">Admin</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">23 Jan</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">12 Comments</div>
-                  </a>
-                </div>
-                <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
-                <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                  tempor invidunt ut labore et dolore magna </p>
-                <button class="post__btn">Read more</button>
               </div>
-              <div class="blog-section__post post">
-                <div class="post__imgbox">
-                  <img class="post__imgbox-img" src="" alt="">
-                  <div class="post__imgbox-date">
-                    <h4 class="post__imgbox-day">23</h4>
-                    <h4 class="post__imgbox-month">jan</h4>
-                  </div>
-                </div>
-                <div class="post__info">
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">Admin</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">23 Jan</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">12 Comments</div>
-                  </a>
-                </div>
-                <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
-                <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                  tempor invidunt ut labore et dolore magna </p>
-                <button class="post__btn">Read more</button>
+              <div class="post__info">
+                <a class="post__info-item" href="#">
+                  <img src="images/admin-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">Admin</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/calendar-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">23 Jan</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/message-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">12 Comments</div>
+                </a>
               </div>
-              <div class="blog-section__post post">
-                <div class="post__imgbox">
-                  <img class="post__imgbox-img" src="" alt="">
-                  <div class="post__imgbox-date">
-                    <h4 class="post__imgbox-day">23</h4>
-                    <h4 class="post__imgbox-month">jan</h4>
-                  </div>
-                </div>
-                <div class="post__info">
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">Admin</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">23 Jan</div>
-                  </a>
-                  <a class="post__info-item" href="#">
-                    <img src="" alt="" class="post__info-img">
-                    <div class="post__info-text">12 Comments</div>
-                  </a>
-                </div>
-                <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
-                <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                  tempor invidunt ut labore et dolore magna </p>
-                <button class="post__btn">Read more</button>
-              </div>
+              <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
+              <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna </p>
+              <button class="post__btn">Read more</button>
             </div>
-            <div class="product__more">
-              <a class="product__more-link" href="#"></a>
+            <div class="blog-section__post post">
+              <div class="post__imgbox">
+                <img class="post__imgbox-img" src="images/content/blog-2.jpg" alt="">
+                <div class="post__imgbox-date">
+                  <h4 class="post__imgbox-day">23</h4>
+                  <h4 class="post__imgbox-month">jan</h4>
+                </div>
+              </div>
+              <div class="post__info">
+                <a class="post__info-item" href="#">
+                  <img src="images/admin-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">Admin</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/calendar-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">23 Jan</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/message-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">12 Comments</div>
+                </a>
+              </div>
+              <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
+              <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna </p>
+              <button class="post__btn">Read more</button>
             </div>
+            <div class="blog-section__post post">
+              <div class="post__imgbox">
+                <img class="post__imgbox-img" src="images/content/blog-3.jpg" alt="">
+                <div class="post__imgbox-date">
+                  <h4 class="post__imgbox-day">23</h4>
+                  <h4 class="post__imgbox-month">jan</h4>
+                </div>
+              </div>
+              <div class="post__info">
+                <a class="post__info-item" href="#">
+                  <img src="images/admin-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">Admin</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/calendar-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">23 Jan</div>
+                </a>
+                <a class="post__info-item" href="#">
+                  <img src="images/message-ico.svg" alt="" class="post__info-img">
+                  <div class="post__info-text">12 Comments</div>
+                </a>
+              </div>
+              <h3 class="post__title">Lorem ipsum dolor sit amet, consetetur sadipscing</h3>
+              <p class="post__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna </p>
+              <button class="post__btn">Read more</button>
+            </div>
+          </div>
+          <div class="blog-section__more">
+            <a class="blog-section__more-link" href="#">View More</a>
           </div>
         </div>
       </section>
@@ -523,12 +745,12 @@
             <form class="start-section__form">
               <input class="start-section__input" type="text" name="name" placeholder="Name">
               <input class="start-section__input" type="email" name="email" placeholder="Email">
-              <button type="submit">subscribe</button>
+              <button class="start-section__btn" type="submit">subscribe</button>
             </form>
           </div>
         </div>
+        <div class="gray-bg"></div>
       </section>
-      <div class="grau-bg"></div>
     </main>
 
     <footer class="footer">
@@ -618,6 +840,7 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
