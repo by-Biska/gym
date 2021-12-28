@@ -14,7 +14,7 @@
   font-weight: 700;
 }
 
-.start-section__text, .start-section__subtitle, .home-section__text, .header__bottom-list {
+.footer__bottom-copy, .footer__list-item, .start-section__text, .start-section__subtitle, .home-section__text, .header__bottom-list {
   font-family: "FuturaLT", sans-serif;
   font-weight: 400;
 }
@@ -1936,4 +1936,52 @@ body {
   position: absolute;
   top: 86px;
   z-index: -1;
+}
+
+.footer__top {
+  background-color: #111111;
+  color: #fff;
+  padding: 70px 0;
+}
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__top-info {
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+.footer__top-address {
+  margin-bottom: 20px;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social-item + .footer__social-item {
+  margin-left: 25px;
+}
+.footer__category-title {
+  font-size: 24px;
+}
+.footer__list {
+  margin-top: 41px;
+}
+.footer__list-item {
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer__list-item + .footer__list-item {
+  margin-top: 29px;
+}
+.footer__bottom {
+  background-color: #000;
+  color: #fff;
+}
+.footer__bottom-copy {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 21px;
 }
